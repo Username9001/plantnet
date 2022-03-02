@@ -1,0 +1,71 @@
+query($id: ID!) {
+  guildById(id:$id) {
+    id
+    name
+	description
+	location
+	soil_structure
+	soil_ph
+	shade
+	plants {
+		id
+		name
+		keystone
+		specy {
+			id
+			latin_name
+			slug
+			wiki_img
+			author
+			botanical_references
+			common_english
+			record_checked
+			gbif_id
+			wiki_img
+			soil_pref
+			shade_pref
+			moisture_pref
+			well_drained
+			ph_pref
+			acid
+			alkaline
+			saline
+			habit
+			deciduous_evergreen
+			height
+			width
+			hardyness
+			in_cultivation
+			nitrogen_fixer
+			wind
+			growth_rate
+			pollution
+			poor_soil
+			drought
+			wildlife
+			flower_type
+			self_fertile
+			has_cultivars
+			cultivars_in_cultivation
+			heavy_clay
+			pull_out
+			frost_tender
+			scented
+			garden_locations
+			garden_layers
+			pollinators
+			medicinal_uses
+			edible_uses
+			other_uses
+			cultivars {
+				cultivar_name
+			}
+			book_list {
+				id
+				title
+				author
+			}
+		}
+	}
+  }
+}

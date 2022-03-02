@@ -1,0 +1,28 @@
+mutation(
+	$name: String!
+	$description: String
+	$specy_id: Int!
+	$guild_id: Int
+	$keystone: Boolean
+){
+  createPlant(createPlantInput:{
+	name: $name
+	description: $description
+	specy_id: $specy_id
+	guild_id: $guild_id
+	keystone: $keystone
+  })
+	{
+		id
+		name
+		keystone
+		specy {
+			id
+			latin_name
+		}
+		guild {
+			id
+			name
+		}
+  }
+}

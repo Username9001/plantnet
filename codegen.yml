@@ -1,0 +1,5 @@
+schema: http://143.176.135.108:8000/graphql
+generates:
+./types.d.ts:
+  plugins:
+    - typescript-vue-apollo

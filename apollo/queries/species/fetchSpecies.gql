@@ -1,0 +1,18 @@
+query species($first: Int!, $page: Int!) {
+    species(first:$first, page:$page) {
+      paginatorInfo {
+        lastPage
+        currentPage
+        total
+        perPage
+      }
+      data {
+        id
+        latin_name
+        common_english
+        slug
+        wiki_img
+        garden_layers
+      }
+    }
+}

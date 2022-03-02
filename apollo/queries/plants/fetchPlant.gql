@@ -1,0 +1,59 @@
+query plantById ($id: ID!) {
+ 	plantById (id: $id) {
+		id
+		name
+		description
+		location
+		planting_date
+		soil
+		#meta data
+		specy {
+            id
+            latin_name
+            slug
+            common_english
+            wiki_img
+            # features {
+            soil_pref
+            shade_pref
+            shade_locations
+            moisture_pref
+            well_drained
+            ph_pref
+            acid
+            alkaline
+            saline
+            habit
+            deciduous_evergreen
+            height
+            width
+            hardyness
+            in_cultivation
+            nitrogen_fixer
+            wind
+            growth_rate
+            pollution
+            poor_soil
+            drought
+            wildlife
+            flower_type
+            pollinators
+            self_fertile
+            has_cultivars
+            cultivars_in_cultivation
+            heavy_clay
+            pull_out
+            frost_tender
+            scented
+            # }
+            garden_locations
+            garden_layers
+        }
+		guild {
+			id
+			name
+			description
+		}
+		keystone
+	}
+}

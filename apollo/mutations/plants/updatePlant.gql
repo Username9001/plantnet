@@ -1,0 +1,27 @@
+mutation(
+	$id: ID!
+	$name: String
+	$description: String
+	$planting_date: String
+	$location: String
+	$guild_id: Int
+) {
+  updatePlant(updatePlantInput:{
+    id: $id
+    name: $name
+    description: $description
+    planting_date: $planting_date
+    location: $location
+    guild_id: $guild_id
+  })
+  {
+		id
+    name
+    description
+		keystone
+		specy {
+			id
+			latin_name
+		}
+  }
+}

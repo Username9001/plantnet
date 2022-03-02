@@ -1,0 +1,6 @@
+query ($guild_id:Int) {
+  plantsByGuild(guild_id:$guild_id) {
+    name
+    id
+  }
+}

@@ -1,0 +1,66 @@
+query plants($first: Int!, $page: Int!) {
+	plants(first:$first, page:$page) {
+        paginatorInfo {
+            lastPage
+            currentPage
+            perPage
+            total
+        }
+        data {
+            id
+            name
+            description
+            planting_date
+            location
+            soil
+            #meta data
+            specy {
+                id
+                latin_name
+                slug
+                common_english
+                wiki_img
+                # features {
+                soil_pref
+                shade_pref
+                shade_locations
+                moisture_pref
+                well_drained
+                ph_pref
+                acid
+                alkaline
+                saline
+                habit
+                deciduous_evergreen
+                height
+                width
+                hardyness
+                in_cultivation
+                nitrogen_fixer
+                wind
+                growth_rate
+                pollution
+                poor_soil
+                drought
+                wildlife
+                flower_type
+                pollinators
+                self_fertile
+                has_cultivars
+                cultivars_in_cultivation
+                heavy_clay
+                pull_out
+                frost_tender
+                scented
+                # }
+                garden_locations
+                garden_layers
+            }
+            guild {
+                name
+                description
+            }
+            keystone
+        }
+	}
+}

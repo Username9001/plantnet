@@ -1,0 +1,26 @@
+mutation(
+  $name: String!
+  $description: String
+  $location: String
+  $shade: String
+  $soil_structure: String
+  $soil_ph: String
+) {
+  createGuild(createGuildInput: {
+    name:$name,
+    description:$description
+    location:$location
+    shade:$shade
+    soil_structure:$soil_structure
+    soil_ph:$soil_ph
+  }
+  ) {
+    id
+    name
+    description
+    location
+    shade
+    soil_structure
+    soil_ph
+  }
+}

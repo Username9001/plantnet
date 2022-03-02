@@ -1,0 +1,181 @@
+query speciesComplexSpecs(
+	$first: Int!
+	$page: Int!
+	$id: Int
+	$latin_name: String
+	$slug: String
+	$author: String
+	$botanical_references: String
+	$common_english: String
+	$record_checked: Int
+	$gbif_id: Int
+	$wiki_img: String
+	$soil_pref: [String]
+	$shade_pref: [String]
+	$shade_locations: [String]
+	$moisture_pref: [String]
+	$well_drained: Boolean
+	$ph_pref: [String]
+	$acid: Boolean
+	$alkaline: Boolean
+	$saline: Boolean
+	$habit: String
+	$deciduous_evergreen: String
+	$height: Float
+	$width: Float
+	$hardyness: Int
+	$in_cultivation: Boolean
+	$nitrogen_fixer: Boolean
+	$wind: String
+	$growth_rate: String
+	$pollution: String
+	$poor_soil: Boolean
+	$drought: Boolean
+	$wildlife: Boolean
+	$flower_type: String
+	$self_fertile: String
+	$has_cultivars: Boolean
+	$cultivars_in_cultivation: Boolean
+	$heavy_clay: Boolean
+	$pull_out: Boolean
+	$frost_tender: String
+	$scented: Boolean
+	$garden_locations: [String]
+	$garden_layers: [String]
+	$pollinators: [String]
+	$medicinal_uses: [String]
+	$edible_uses: [String]
+	$other_uses: [String]
+	$regions_britain: [String]
+	$regions_europe: [String]
+	$regions_mediterranean: [String]
+	$regions_w_asia: [String]
+	$regions_e_asia: [String]
+	$regions_n_america: [String]
+	$regions_s_america: [String]
+	$regions_africa: [String]
+	$regions_australasia: [String]
+	$regions_other: [String]
+){
+  speciesComplexSpecs(
+	first: $first
+	page: $page
+	id: $id
+	latin_name: $latin_name
+	slug: $slug
+	author: $author
+	botanical_references: $botanical_references
+	common_english: $common_english
+	record_checked: $record_checked
+	gbif_id: $gbif_id
+	wiki_img: $wiki_img
+	soil_pref: $soil_pref
+	shade_pref: $shade_pref
+	shade_locations: $shade_locations
+	moisture_pref: $moisture_pref
+	well_drained: $well_drained
+	ph_pref: $ph_pref
+	acid: $acid
+	alkaline: $alkaline
+	saline: $saline
+	habit: $habit
+	deciduous_evergreen: $deciduous_evergreen
+	height: $height
+	width: $width
+	hardyness: $hardyness
+	in_cultivation: $in_cultivation
+	nitrogen_fixer: $nitrogen_fixer
+	wind: $wind
+	growth_rate: $growth_rate
+	pollution: $pollution
+	poor_soil: $poor_soil
+	drought: $drought
+	wildlife: $wildlife
+	flower_type: $flower_type
+	self_fertile: $self_fertile
+	has_cultivars: $has_cultivars
+	cultivars_in_cultivation: $cultivars_in_cultivation
+	heavy_clay: $heavy_clay
+	pull_out: $pull_out
+	frost_tender: $frost_tender
+	scented: $scented
+	garden_locations: $garden_locations
+	garden_layers: $garden_layers
+	pollinators: $pollinators
+	medicinal_uses: $medicinal_uses
+	edible_uses: $edible_uses
+	other_uses: $other_uses
+	regions_britain:$regions_britain
+	regions_europe:$regions_europe
+	regions_mediterranean:$regions_mediterranean
+	regions_w_asia:$regions_w_asia
+	regions_e_asia:$regions_e_asia
+	regions_n_america:$regions_n_america
+	regions_s_america:$regions_s_america
+	regions_africa:$regions_africa
+	regions_australasia:$regions_australasia
+	regions_other:$regions_other
+  ){
+	paginatorInfo {
+		lastPage
+		currentPage
+		total
+	}
+	data {
+		id
+		regions_britain
+		regions_europe
+		regions_mediterranean
+		regions_w_asia
+		regions_e_asia
+		regions_n_america
+		regions_s_america
+		regions_africa
+		regions_australasia
+		regions_other
+		latin_name
+		slug
+		wiki_img
+		author
+		botanical_references
+		common_english
+		record_checked
+		gbif_id
+		wiki_img
+		soil_pref
+		shade_pref
+		moisture_pref
+		well_drained
+		ph_pref
+		acid
+		alkaline
+		saline
+		habit
+		deciduous_evergreen
+		height
+		width
+		hardyness
+		in_cultivation
+		nitrogen_fixer
+		wind
+		growth_rate
+		pollution
+		poor_soil
+		drought
+		wildlife
+		flower_type
+		self_fertile
+		has_cultivars
+		cultivars_in_cultivation
+		heavy_clay
+		pull_out
+		frost_tender
+		scented
+		garden_locations
+		garden_layers
+		pollinators
+		medicinal_uses
+		other_uses
+  	}
+  }
+}

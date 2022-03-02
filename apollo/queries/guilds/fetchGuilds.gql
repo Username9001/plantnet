@@ -1,0 +1,31 @@
+query guilds($first: Int!, $page: Int!) {
+	guilds(first:$first, page:$page) {
+      paginatorInfo {
+        lastPage
+        currentPage
+		perPage
+        total
+      }
+		data {
+			id
+			name
+			description
+			location
+			soil_structure
+			soil_ph
+			shade
+			plants {
+				id
+				name
+				description
+				specy {
+					id
+					latin_name
+					common_english
+					wiki_img
+					garden_layers
+				}
+			}
+		}
+	}
+}
