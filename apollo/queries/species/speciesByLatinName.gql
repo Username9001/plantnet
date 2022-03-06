@@ -4,6 +4,7 @@ query speciesByLatinName($slug: String!){
 		latin_name
 		slug
 		common_english
+		author
 		wiki_img
 		soil_pref
 		shade_pref

@@ -55,16 +55,7 @@ query($id: ID!) {
 			garden_layers
 			pollinators
 			medicinal_uses
-			edible_uses
 			other_uses
-			cultivars {
-				cultivar_name
-			}
-			book_list {
-				id
-				title
-				author
-			}
 		}
 	}
   }

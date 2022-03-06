@@ -7,7 +7,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "vuex-cart",
+    title: "plant-monitor",
     htmlAttrs: {
       lang: "en",
     },

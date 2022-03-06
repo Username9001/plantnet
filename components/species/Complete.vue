@@ -10,6 +10,8 @@
         :meta="speciesByLatinName"
       />
     </b-row>
+    <!-- COMBINATION SUGGESTIONS -->
+    <SpeciesSuggestions :meta="speciesByLatinName" />
     <hr />
     <h4>Sources:</h4>
     <b-tabs>
@@ -27,6 +29,9 @@
       <b-tab title="Wikipedia">
         <SpeciesSourcesWikipedia :specy="speciesByLatinName" />
       </b-tab>
+      <!-- <b-tab title="Plantnet">
+        <SpeciesSourcesPlantnet :specy="speciesByLatinName" />
+      </b-tab> -->
       <!-- GBIF -->
       <b-tab title="GBIF">
         <br />
