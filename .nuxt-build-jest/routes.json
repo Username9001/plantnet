@@ -1,0 +1,100 @@
+[
+  {
+    "name": "builder",
+    "path": "/builder",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/builder/index.vue",
+    "chunkName": "pages/builder/index",
+    "_name": "_8d332b70"
+  },
+  {
+    "name": "categories",
+    "path": "/categories",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/categories/index.vue",
+    "chunkName": "pages/categories/index",
+    "_name": "_031270b6"
+  },
+  {
+    "name": "gardenmanager",
+    "path": "/gardenmanager",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/gardenmanager/index.vue",
+    "chunkName": "pages/gardenmanager/index",
+    "_name": "_6804fe76"
+  },
+  {
+    "name": "plantedex",
+    "path": "/plantedex",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/plantedex/index.vue",
+    "chunkName": "pages/plantedex/index",
+    "_name": "_22edd62a"
+  },
+  {
+    "name": "plants",
+    "path": "/plants",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/plants/index.vue",
+    "chunkName": "pages/plants/index",
+    "_name": "_634aacf1"
+  },
+  {
+    "name": "guilds",
+    "path": "/guilds",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/guilds/index.vue",
+    "chunkName": "pages/guilds/index",
+    "_name": "_231dc61f"
+  },
+  {
+    "name": "upload",
+    "path": "/upload",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/upload.vue",
+    "chunkName": "pages/upload",
+    "_name": "_59d3b707"
+  },
+  {
+    "name": "gardenmanager-creator",
+    "path": "/gardenmanager/creator",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/gardenmanager/creator.vue",
+    "chunkName": "pages/gardenmanager/creator",
+    "_name": "_b3b91f42"
+  },
+  {
+    "name": "guilds-create",
+    "path": "/guilds/create",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/guilds/create.vue",
+    "chunkName": "pages/guilds/create",
+    "_name": "_684f487f"
+  },
+  {
+    "name": "categories-id",
+    "path": "/categories/:id",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/categories/_id.vue",
+    "chunkName": "pages/categories/_id",
+    "_name": "_17ec6f4d"
+  },
+  {
+    "name": "plants-id",
+    "path": "/plants/:id",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/plants/_id.vue",
+    "chunkName": "pages/plants/_id",
+    "_name": "_ba5d90ce"
+  },
+  {
+    "name": "guilds-id",
+    "path": "/guilds/:id",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/guilds/_id.vue",
+    "chunkName": "pages/guilds/_id",
+    "_name": "_15567772"
+  },
+  {
+    "name": "species-id",
+    "path": "/species/:id?",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/species/_id.vue",
+    "chunkName": "pages/species/_id",
+    "_name": "_5b6f015e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/sambadata/Web/Development/vuex-cart/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_cd46a488"
+  }
+]

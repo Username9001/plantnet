@@ -14,4 +14,7 @@ export default {
   updateGuildsPage: (state, data) => {
     state.guildsPage = data
   },
+  updateSuggestionsPage: (state, data) => {
+    state.suggestionsPage = data
+  },
 }

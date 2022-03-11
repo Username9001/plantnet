@@ -4,4 +4,5 @@ export default () => ({
   speciesPage: 1,
   plantsPage: 1,
   guildsPage: 1,
+  suggestionsPage: 1,
 })

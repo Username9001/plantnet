@@ -8,6 +8,7 @@
         {{ name }}
       </li>
     </ul>
+    <h4>Hardiness zone: {{ meta.hardyness }}</h4>
     <small>Family: </small>
     <h4 v-if="meta.taxons">
       {{ meta.taxons.taxon_family }}

@@ -119,6 +119,7 @@ query speciesComplexSpecs(
 	paginatorInfo {
 		lastPage
 		currentPage
+		perPage
 		total
 	}
 	data {
