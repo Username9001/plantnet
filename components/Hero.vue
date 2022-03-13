@@ -1,6 +1,6 @@
 <template>
   <b-form-group>
-    <h1>Garden Guild Builder</h1>
+    <h1>GGB</h1>
     <i><h3>Cutting edge garden planning webapp</h3></i>
     <p class="information-block">
       Browse through the different species in our database and combine your own
