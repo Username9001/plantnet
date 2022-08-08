@@ -1,14 +1,14 @@
 <template>
   <b-card v-if="isLoaded">
     <b-tabs>
-      <b-tab title="Image Search">
+      <!-- <b-tab title="Image Search">
         <PlantedexSearchImage :keystone="keystone" />
         <PlantedexResultsList :method="'image'" />
-      </b-tab>
-      <b-tab title="Specs Search">
+      </b-tab> -->
+      <!-- <b-tab title="Specs Search"> -->
         <PlantedexSearchSpecs :keystone="keystone" />
         <PlantedexResultsList :method="'specs'" />
-      </b-tab>
+      <!-- </b-tab> -->
     </b-tabs>
   </b-card>
 </template>

@@ -37,149 +37,16 @@
               </b-form-input>
             </b-form-group>
             <hr />
-            <!-- Regions -->
-            <b-alert show variant="danger">
+            <!-- ALERT -->
+            <!-- <b-alert show variant="danger">
               <strong>Warning:</strong> The following parameters are currently
               insufficiently populated within the database to give a wholesome
               representation of their respective plants. For example: trees
               might not have a canopy layer assigned to them yet. Or a plant
               might be native to an area but not yet have the corresponding
               parameter.
-            </b-alert>
-            <b-btn v-b-toggle.regions-collapse>Regions</b-btn>
-            <b-collapse id="regions-collapse">
-              <!-- Britain -->
-              <b-form-group description="British region">
-                <b-form-checkbox-group v-model="regions_britain_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_britain"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-              <!-- Europe -->
-              <b-form-group description="European region">
-                <b-form-checkbox-group v-model="regions_europe_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_europe"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-              <!-- Mediterranean -->
-              <b-form-group description="Mediterranean region">
-                <b-form-checkbox-group v-model="regions_mediterranean_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_mediterranean"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-              <!-- West Asia -->
-              <b-form-group description="West Asian region">
-                <b-form-checkbox-group v-model="regions_w_asia_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_w_asia"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-              <!-- East Asia -->
-              <b-form-group description="East Asian region">
-                <b-form-checkbox-group v-model="regions_e_asia_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_e_asia"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <!-- North America -->
-              <b-form-group description="North American region">
-                <b-form-checkbox-group v-model="regions_n_america_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_n_america"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <!-- South America -->
-              <b-form-group description="South American region">
-                <b-form-checkbox-group v-model="regions_s_america_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_s_america"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-              <!-- African -->
-              <b-form-group description="African region">
-                <b-form-checkbox-group v-model="regions_africa_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_africa"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-              <!-- Australasia -->
-              <b-form-group description="Australasian region">
-                <b-form-checkbox-group v-model="regions_australasia_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_australasia"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-
-              <!-- Other -->
-              <b-form-group description="Other regions">
-                <b-form-checkbox-group v-model="regions_other_selected">
-                  <b-form-checkbox
-                    v-for="value in regions_other"
-                    :key="value"
-                    :value="value"
-                  >
-                    {{ value }}
-                  </b-form-checkbox>
-                </b-form-checkbox-group>
-              </b-form-group>
-              <hr />
-            </b-collapse>
+            </b-alert> -->
           </b-col>
-          <!-- End of Regions -->
           <!-- Niches -->
           <b-col cols="12" md="6">
             <b-form-group>
@@ -197,6 +64,20 @@
                       {{ value }}
                     </b-form-checkbox></b-form-checkbox-group
                   >
+                </b-form-group>
+              </b-collapse>
+              <hr />
+              <b-btn v-b-toggle.hardyness-collapse>Hardyness</b-btn>
+              <b-collapse id="hardyness-collapse">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/World_Hardiness_Zones.png" class="hardiness-img" alt="">
+                <b-form-group
+                  description="Hardyness of the plant"
+                >
+                  <b-form-select
+                    v-model="hardyness"
+                    :options="hardyness_options"
+                  >
+                  </b-form-select>
                 </b-form-group>
               </b-collapse>
               <hr />
@@ -320,43 +201,7 @@ export default {
       ph_pref: undefined,
       garden_layers: undefined,
       other_uses: undefined,
-      selected_region: undefined,
-      region_details: undefined,
-      regions_britain_selected: undefined,
-      regions_europe_selected: undefined,
-      regions_mediterranean_selected: undefined,
-      regions_w_asia_selected: undefined,
-      regions_e_asia_selected: undefined,
-      regions_n_america_selected: undefined,
-      regions_s_america_selected: undefined,
-      regions_africa_selected: undefined,
-      regions_australasia_selected: undefined,
-      regions_other_selected: undefined,
-      // regions
-      regions_britain: ["0", "1", "I", "N"],
-      regions_europe: ["", "0", "1", "C", "N", "E", "S", "W"],
-      regions_mediterranean: ["0", "1"],
-      regions_w_asia: ["0", "1"],
-      regions_e_asia: [
-        "0",
-        "1",
-        "C",
-        "B",
-        "H",
-        "J",
-        "M",
-        "S",
-        "I",
-        "K",
-        "R",
-        "Ch",
-        "T",
-      ],
-      regions_n_america: ["0", "1", "C", "N", "E", "S", "W"],
-      regions_s_america: ["0", "1", "A", "U", "C", "Ch", "N", "P", "S", "W"],
-      regions_africa: ["0", "1", "N", "E", "S"],
-      regions_australasia: ["0", "1", "A", "N"],
-      regions_other: ["0", "1", "None", "T"],
+      hardyness: undefined,
       // display values
       soil_prefs: ["LIGHT_SOIL", "MEDIUM_SOIL", "HEAVY_SOIL"],
       shade_prefs: ["NO_SHADE", "SEMI_SHADE", "FULL_SHADE"],
@@ -394,6 +239,19 @@ export default {
         "INSECTICIDE",
         "PARASITICIDE",
       ],
+      hardyness_options: [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        0,
+      ],
       isLoaded: false,
       // loading animation
       loading: false,
@@ -424,16 +282,7 @@ export default {
         ph_pref: this.ph_pref,
         garden_layers: this.garden_layers,
         other_uses: this.other_uses,
-        regions_britain: this.regions_britain_selected,
-        regions_europe: this.regions_europe_selected,
-        regions_mediterranean: this.regions_mediterranean_selected,
-        regions_w_asia: this.regions_w_asia_selected,
-        regions_e_asia: this.regions_e_asia_selected,
-        regions_n_america: this.regions_n_america_selected,
-        regions_s_america: this.regions_s_america_selected,
-        regions_africa: this.regions_africa_selected,
-        regions_australasia: this.regions_australasia_selected,
-        regions_other: this.regions_other_selected,
+        hardyness: this.hardyness,
       })
       // RESET THE QUERY
       // this.resetSearch()
@@ -448,16 +297,7 @@ export default {
       this.ph_pref = undefined
       this.garden_layers = undefined
       this.other_uses = undefined
-      this.regions_britain_selected = undefined
-      this.regions_europe_selected = undefined
-      this.regions_mediterranean_selected = undefined
-      this.regions_w_asia_selected = undefined
-      this.regions_e_asia_selected = undefined
-      this.regions_n_america_selected = undefined
-      this.regions_s_america_selected = undefined
-      this.regions_africa_selected = undefined
-      this.regions_australasia_selected = undefined
-      this.regions_other_selected = undefined
+      this.hardyness = undefined
     },
   },
 }
@@ -469,5 +309,14 @@ export default {
 }
 .loading-block {
   width: 100%;
+}
+.hardiness-img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  transition: transform .2s;
+}
+.hardiness-img:focus {
+  transform: scale(2);
 }
 </style>

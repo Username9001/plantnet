@@ -2,6 +2,7 @@
   <b-container v-if="species && isLoaded">
     <h1>Plant Species</h1>
     <b-alert show>Description of permaflorae database</b-alert>
+    <!-- <PlantedexFilterComplete /> -->
     <nuxt-link to="plantedex"><b-btn>Go To species lookup</b-btn></nuxt-link>
     <hr />
     <b-row>

@@ -1,6 +1,6 @@
 <template>
     <b-container v-if="speciesComplexSpecs && isLoaded">
-      <h2>Pick a few parameters:</h2>
+      <h2>Pick a layer of the garden:</h2>
       <b-form>
         <b-form-group>
           <b-form-select       

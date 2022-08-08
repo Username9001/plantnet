@@ -64,17 +64,7 @@ export default {
           ph_pref: this.specsList.ph_pref ?? undefined,
           garden_layers: this.specsList.garden_layers ?? undefined,
           other_uses: this.specsList.other_uses ?? undefined,
-          regions_britain: this.specsList.regions_britain ?? undefined,
-          regions_europe: this.specsList.regions_europe ?? undefined,
-          regions_mediterranean:
-            this.specsList.regions_mediterranean ?? undefined,
-          regions_w_asia: this.specsList.regions_w_asia ?? undefined,
-          regions_e_asia: this.specsList.regions_e_asia ?? undefined,
-          regions_n_america: this.specsList.regions_n_america ?? undefined,
-          regions_s_america: this.specsList.regions_s_america ?? undefined,
-          regions_africa: this.specsList.regions_africa ?? undefined,
-          regions_australasia: this.specsList.regions_australasia ?? undefined,
-          regions_other: this.specsList.regions_other ?? undefined,
+          hardyness: this.specsList.hardyness ?? undefined,
           // pagination
           page: this.currentPage,
           first: 20,
